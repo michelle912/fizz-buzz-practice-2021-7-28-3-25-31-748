@@ -19,4 +19,17 @@ public class FizzBuzzTest {
         assertEquals("1", result);
     }
 
+    @Test
+    public void should_return_Fizz_when_countOff_given_multiple_of_3() {
+        // given
+        int number = 3;
+
+        // when
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String result = fizzBuzz.countOff(number);
+
+        // then
+        assertEquals("Fizz", result);
+    }
+
 }
